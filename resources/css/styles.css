@@ -13,8 +13,9 @@ body {
     font-weight: 600;
     font-style: normal;
     margin: 10px;
-    background-color: var(--color-5);
-    background-image: url("../images/background.png");
+    background-color: var(--color-1);
+    /* background-image: url("../images/background.png"); */
+    background-image: url("../images/wood.png");
 }
 
 .layout-area {
@@ -192,18 +193,21 @@ body {
     font-weight: bold;
 }
 
+.overlay{
+    position: fixed;
+    bottom: 50%;
+    right: 10px;
+    z-index: var(--z-index-overlay);
+}
+
 .whatsapp,
 .facebook {
     background-size: contain;
     background-repeat: no-repeat;
-    color: white;
-    position: fixed;
     height: 50px;
     width: 50px;
-    padding: 5px;
+    margin-bottom: 10px;
     box-sizing: border-box;
-    right: 10px;
-    z-index: var(--z-index-overlay);
 }
 
 .whatsapp:hover,
@@ -213,12 +217,10 @@ body {
 }
 
 .whatsapp {
-    bottom: 50%;
     background-image: url("../images/WhatsApp_icon.png");
 }
 
 .facebook {
-    bottom: 40%;
     background-image: url("../images/Facebook_icon.png");
 }
 
